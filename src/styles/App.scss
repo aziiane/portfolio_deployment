@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+  overflow: hidden !important;
+}
+
+html {
+  background-image: url('../imgs/background2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  color: blueviolet
+}
+
+.container {
+  width: 40%;
+  margin-top: 5px;
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-rows: minmax(64px, auto);
+
+
+  ul {
+    min-width: 120px;
+    display: grid;
+    margin: 15px 0;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 560px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.container:first-child {
+  margin-left: 5px;
+}
+
+
+
+.container>ul:hover {
+  background-color: rgba($color: white, $alpha: 0.150);
+  border-radius: 2px;
+  cursor: pointer
+}
+
+.container {
+  li {
+    display: inherit;
+    padding: 0 25px;
+    text-align: center !important;
+
+    img {
+      min-width: 55px;
+      width: 55px;
+      display: initial;
+    }
+  }
+}
+
+.appContainer {
+  background-color: transparent;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  border-radius: 15px;
+  z-index: 2;
+
+  .appHeader {
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .50);
+    backdrop-filter: blur(200px);
+    height: 40px;
+
+    span {
+      float: right;
+      height: 100%;
+      position: relative;
+    }
+
+    p {
+      margin-left: 15px;
+      color: whitesmoke;
+      float: left;
+      height: 100%;
+      font-size: 150%;
+      text-transform: uppercase;
+    }
+
+    span p svg {
+      height: 100%;
+      font-size: 111%;
+      margin-right: 10px;
+
+      :hover {
+        color: red;
+      }
+    }
+  }
+
+  .appBody {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+
+    p {
+
+      color: black;
+      padding: 10px 15px;
+    }
+  }
+}
+
+.application {
+  width: 50%;
+  min-height: 20%;
+}
+
+.textEditor {
+  width: 30%;
+  height: 75%;
+
+  textarea {
+    width: 100%;
+    height: 100% !important;
+    min-width: 100%;
+    min-height: 100% !important;
+    max-width: 100%;
+    max-height: 100% !important;
+    padding: 5px;
+  }
+}
