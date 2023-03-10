@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { BsInstagram, BsLinkedin, BsArrowBarUp } from "react-icons/bs";
-import './styles/footer.scss'
+import './footer.scss'
 
 export default function Footer() {
-    let [state, setState] = useState(true);
+    let [state, setState] = useState(false);
     function toggleState() { setState(!state); console.log(state) }
     return (
         <>
