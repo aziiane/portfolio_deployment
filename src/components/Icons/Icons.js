@@ -20,7 +20,7 @@ export default function Icons() {
                 </ul>
 
                 <ul>
-                    <Link to="/application/contact">
+                    <Link to="mailto:contact@chebila.space">
                         <li className='justify-center'>
                             <img src={Contact} alt="IMG" />
                         </li>

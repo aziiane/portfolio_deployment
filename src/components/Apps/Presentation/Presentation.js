@@ -14,7 +14,7 @@ export default function Presentation() {
                     </span>
                 </div>
                 <div className='appBody'>
-                    <textArea>LGMSGKSMDLGKDMLFKDSMFKDMSLFKSDMFLK</textArea>
+                    
                 </div>
             </div>
         </>
