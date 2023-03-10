@@ -41,19 +41,23 @@ footer {
     font-size: 32px;
     position: absolute;
     bottom: 0px;
-
     //background-color: black;
     z-index: 10;
     transform: rotateX(0deg);
     transition-property: bottom, transform;
     transition: 0.35s ease-out;
     left: 49%;
+
 }
+
+
 
 .button.active {
     bottom: 50px;
     transform: rotateX(180deg);
+
 }
+
 
 .active {
     bottom: $closedFooterPosition + 50px;

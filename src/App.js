@@ -1,20 +1,24 @@
 import './styles/App.scss';
-import Application from './Application'
-import { Routes, Route } from 'react-router-dom'
+import { Routes as AppRoutes, Route } from 'react-router-dom'
 import React from 'react'
-import Desktop from './Desktop';
-import Contact from './Contact';
-import Footer from './Footer';
+import Icons from './components/Icons/Icons';
+import Contact from './components/Apps/Contact/Contact';
+import Presentation from './components/Apps/Presentation/Presentation';
+import Footer from './components/Footer/Footer'
+import Galery from './components/Apps/Galery/Galery';
 
 export default function App() {
   return (
     <>
-      <Desktop />
-      <Routes>
+      <Icons />
+
+      <AppRoutes>
         <Route path='/' element="" />
-        <Route path='application/:id' element={<Application />} />
         <Route path='application/contact' element={<Contact />} />
-      </Routes>
+        <Route path='application/presentation' element={<Presentation />} />
+        <Route path='application/galery' element={<Galery />} />
+      </AppRoutes>
+      
       <Footer />
     </>
   );
