@@ -12,7 +12,7 @@ export default function Icons() {
             <div className='container'>
                 <ul>
                     <Link to="/application/presentation">
-                        <li className='justify-center'>
+                        <li className='justify-center' >
                             <img src={Man} alt="IMG" />
                         </li>
                         <li className='text text-center'>Presentation</li>
