@@ -1,5 +1,17 @@
 .playButtonAppHeader{
-    svg{
-    color:green;
-    }
+    .play{
+        height: 100%;
+        font-size: 111%;
+        margin-right: 10px;
+  
+        :hover{
+          color: green;
+        }
+        } 
+}
+
+.codeContainer{
+    display: inherit;
+    flex-direction: column;
+    padding: 5px 0px 0px 10px;
 }
