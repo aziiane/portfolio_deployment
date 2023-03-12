@@ -27,7 +27,7 @@ h1 {
   border-radius: 15px;
   box-shadow: 0px 0px 10px #000;
   z-index: 5;
-  width: 75%;
+  width: 65%;
   height: 80%;
 
   .appHeader {
@@ -44,26 +44,25 @@ h1 {
       position: relative;
     }
 
+    .appTitle{margin-left: 1rem;}
     p {
-      margin-left: 15px;
       color: whitesmoke;
       float: left;
       height: 100%;
       font-size: 150%;
-    }
 
-    span p {
-      svg{
+      .exit{
       height: 100%;
       font-size: 111%;
       margin-right: 10px;
-
-      :hover{
-        color: red;
-      }
+      margin-left: 0;
+        :hover{
+          color: red;
+        }
       } 
     }
   }
+
 
   .appBody {
     width: 100%;
